@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+
+<head>
+<title>Login Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html { overflow-y: hidden; }
+.signin{
+border: 1px solid rgba(255,255,255,0.2);
+border-radius: 5px;
+padding: 3em;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+opacity: 0.9;
+}
+h2{
+	background-color:#3b3c44;   
+	margin-top: 0px;
+font-weight: bold;
+	color:#04acb4; 
+	font-size: 50px;
+	text-align: center;
+}
+
+input{
+	display: block;
+	width: 320px;
+	height: 50px;
+	background: rgba(0,0,0,0.8);
+	outline: none;
+	color: yellow;
+	border: 1px solid rgba(0,0,0,0.5);
+	font-family: Source Sans Pro;
+	font-weight: 900;
+	font-size: 14px;
+margin-bottom: 10px;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+
+button{
+	width: 332px;
+	height: 50px;
+	font-size: 16px;
+	background: #000;
+	font-weight: bold;	
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+}
+</style>
+<link rel="stylesheet" href="css.css">
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+
+<script>
+	function Validate()
+	{
+		var fname = document.forms["Form"]["Fname"];              
+	    var lname = document.forms["Form"]["Lname"];
+		var phone = document.forms["Form"]["Phone"];
+		var email = document.forms["Form"]["Email"];    
+		var username = document.forms["Form"]["Username"];
+		var password = document.forms["Form"]["Password"];	
+		if (fname.value == "")                                 
+		{	
+			window.alert("Enter Your First Name!!!");
+	    	fname.focus();
+	    	return false;
+		}
+
+		if (lname.value == "")                                 
+		{
+			window.alert("Enter Your Last Name!!!");
+			lname.focus();
+			return false;
+		}  
+	  
+		if (phone.value == "")                          
+		{
+			window.alert("Enter Your Phone Number!!!");
+			phone.focus();
+			return false;
+		}
+
+		if (email.value == "")                          
+		{
+			window.alert("Enter Your Email Address!!!");
+			email.focus();
+			return false;
+		}
+
+		if (username.value == "")                                 
+		{
+			window.alert("Enter A Username!!!");
+			username.focus();
+			return false;
+		} 
+
+		if (password.value == "")                                 
+		{
+			window.alert("Enter A Password!!!");
+			password.focus();
+			return false;
+		}   
+
+		return true;
+	}
+</script>
+</head>
+
+<body>
+
+<div class="bg">
+<div class="signin">
+		
+	<form name="Form"  action="home.html" onsubmit="return pswd()">   
+ 		<h2> Sign Up </h2>
+
+		<input type="text" name="Fname" placeholder="Enter First Name"/>
+		<input type="text" name="Lname" placeholder="Enter Last Name"/>
+		<input type="text" maxlength="10" name="Phone" pattern="[7-9]{1}[0-9]{9}" placeholder="Enter Phone Number"/>
+		<input type="email" name="Email" placeholder="Enter Email"/>
+		<input type="text" name="username" id="username" placeholder="Enter Username"/>
+		<input type="password" name="password" id="password" minlength="8" placeholder="Enter Password"/>
+		<button class="btn" id="buton" value=submit>GET IN!</button>
+				
+
+	</form>
+
+</div>
+</div>
+
+
+<div id="Navigator" class="sidenav">
+    <a href="login.html" id="register"><h5><pre>Suit-up!           <</pre></h5></a>
+
+</div>
+</div>
+ </div>
+<div class="tooltip">
+<a href="index.html">
+<img src="images/logo.png" alt="logo"></a>
+<span class="tooltiptext">To rekindle the kind kid in you,
+we at Comics' World help you rediscover the lost treasures of your past.</span></div>
+
+  </body>
+
+</html>

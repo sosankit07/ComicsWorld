@@ -1,0 +1,111 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	body,html{margin:0;padding:0;height:100%;}
+	body{
+		background-image: url('images/blur.jpg'); 
+		background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	height: 100%;
+    }
+	.wrap{
+	  position:relative;
+	  width:80vmin; height:80vmin;
+	  margin:0 auto;
+	  transform:scale(0.2) translateZ(0px);
+	  opacity:0;
+	  transition:transform .5s, opacity .5s;
+	}
+	a{
+	  position:absolute;
+	  left:0; top:0;
+	  width:47.5%; height:47.5%;
+	  overflow:hidden;
+	  transform:scale(.5) translateZ(0px);
+	  background:#585247;
+	}
+	a div{
+	  height:100%;
+	  background-size:cover;
+	  opacity:.5;
+	  transition:opacity .5s;
+	  border-radius:inherit;
+	}
+	a:nth-child(1){
+	  border-radius:40vmin 0 0 0;
+	  transform-origin: 110% 110%;
+	  transition:transform .4s .15s;
+	}
+	a:nth-child(1) div{
+	  background-image:url('images/superman.png');
+	}
+	a:nth-child(2){
+	  border-radius:0 40vmin 0 0;
+	  left:52.5%;
+	  transform-origin: -10% 110%;
+	  transition:transform .4s .2s;
+	}
+	a:nth-child(2) div{
+	  background-image:url('images/ironman.png');
+	}
+	a:nth-child(3){
+	  border-radius:0 0 0 40vmin;
+	  top:52.5%;
+	  transform-origin: 110% -10%;
+	  transition:transform .4s .25s;
+	}
+	a:nth-child(3) div{
+	  background-image:url('images/batman.png');
+	}
+	a:nth-child(4){
+	  border-radius:0 0 40vmin 0;
+	  top:52.5%; left:52.5%;
+	  transform-origin: -10% -10%;
+	  transition:transform .4s .3s;
+	}
+	a:nth-child(4) div{
+	  background-image: url('images/captain.jpg');
+	}
+	a:nth-child(5){
+	  width:55%;height:55%;
+	  left:22.5%; top:22.5%;
+	  border-radius:50vmin;
+	  box-shadow:0 0 0 5vmin #E3DFD2;
+	  transform:scale(1);
+	}
+	a:nth-child(5) div{
+	  background-image: url('images/im1.png');
+	}
+	.wrap, .wrap:hover{
+	  transform:scale(.8) translateZ(0px);
+	  opacity:1;
+	}
+	.wrap a, .wrap:hover a{
+	  transform:scale(1) translateZ(0px);
+	}
+	a:hover div{
+	  opacity:1;
+	  transform:translateZ(0px);
+	}
+	</style>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div class="wrap">
+	  <a href="blogin.html" title="Post Blog"><div></div></a>
+	  <a href="blogcontent.html" title="Blog Content"><div></div></a>
+	  <a href="comics.html" title="comics"><div></div></a>
+	  <a href="characterinfo.html#bt1" title="Character Wikipedia"><div></div></a>
+	  <a href="index.html" title="Log Out"><div></div></a>
+	</div>
+
+	<div class="tooltip">
+	
+	<img src="images/logo.png" alt="logo">
+	<span class="tooltiptext">To rekindle the kind kid in you, we at Comics' 
+	World help you rediscover the lost treasures of your past.</span></div>
+</div>
+</body>
+</html>

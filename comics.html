@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<title>Comics'Worlds/Comics</title>
+<link rel="stylesheet" href="comics.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$(window).on('scroll',function(){
+if($(window).scrollTop()){
+$('nav').addClass('black');
+}
+else
+{
+$('nav').removeClass('black');
+}
+})
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styling.css">
+<link rel="stylesheet" href="charinfo.css">
+
+<style>
+</style>
+</head>
+<body class="comics">
+<div class="bg" style="z-index=0;">
+
+<nav>
+<ul style="background: rgb(0,0,0,0.9);">
+<li><a href="home.html">Home</a></li>
+<li><a href="wdl.html">Log out</a></li>
+<li><a href="blogin.html" >Submit</a></li>
+<li><a class="active"href="comics.html">Comics</a></li>
+<li><a href="characterinfo.html#bt1">Characters</a></li>
+<li> <div class="dropdown">
+    <button class="dropbtn" style="line-height: 80px;
+color: yellow;
+padding: 0px 20px;
+font-family: 'Roboto', sans-serif;
+
+
+text-decoration: none;
+text-transform: uppercase;
+transition: .5s;">BLOGS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="blogcontent.html#dp">Deadpool</a>
+      <a href="blogcontent.html#dbz">DragonBallZ</a>
+      <a href="blogcontent.html#bt">Batman</a>
+    </div>
+  </div></li> 
+</ul>
+</nav>
+
+<section class="content">
+<a href="batman.html" target="_blank">  <img src="images/01.jpg" alt="batman" class="batmandamned" ></a>
+<a href="wakanda.html" target="_blank"><img src="images/101.jpg" alt="wakanda" class="wakanda"  ></a>
+<a href="gijoe.html" target="_blank"><img src="images/201.jpg" alt="gijoe" class="gijoe"  ></a>
+</section>
+
+
+<div class="tooltip" style="z-index:30;">
+        <img class="imga" src="images/logo.png" alt="logo" style="z-index:30;">
+        <span class="tooltiptext">To rekindle the kind kid in you,
+        we at Comics' World help you rediscover the lost treasures of your past.</span></div>
+  
+  
+  </div>
+ 
+   
+
+
+</body>
+</html>

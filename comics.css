@@ -1,0 +1,62 @@
+.comics{
+background-image:url("images/blur.jpg");
+background-position:center;
+}
+.batmandamned{
+position: fixed;
+left: 100px;
+bottom: 100px;	
+height:400px;
+width:300px;
+}
+.wakanda{
+position: fixed;	
+height:400px;
+width:300px;
+left: 500px;
+bottom: 100px;
+}
+.gijoe{
+position: fixed;	
+left: 900px;
+bottom: 100px;
+height:400px;
+width:300px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+	
+    /* Position the tooltip */
+    position: fixed;
+right:0;
+bottom: 207px;
+    
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip img{
+    position: fixed;
+    height=100px; 
+    width:150px;
+       bottom: 20px;
+        right: 0;
+        opacity: 0.5;
+    transition: all .2s ease-in-out; 
+        }
+
+	

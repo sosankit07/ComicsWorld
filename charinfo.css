@@ -1,0 +1,213 @@
+body{
+    background-image: url("images/blur.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container1 {
+position:relative;
+width:1200px;
+height:600px;
+margin:80px auto 0;
+z-index=1;
+}
+.container1 .box{
+    border-style:groove;
+    border-color: snow;
+    border-radius: 12px;
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #000000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,.8);
+	
+}
+.container1 .box:before
+{
+    content: '';
+    position: relative;
+    top: 10px;
+    left: 10px;
+    right:10px;
+    bottom:10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform:scaleX(0);
+    opacity: 0;
+    }
+.container1 .box:hover:before
+{
+    transform: scaleX(1);
+    opacity: 1;
+}
+.container1 .box:after
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right:10px;
+    bottom:10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform:scaleY(0);
+    opacity: 0;
+    
+}
+.container1 .box:hover:after
+{
+    transform: scaleY(1);
+    opacity: 1;
+}
+.container1 .box .imgBox
+{
+    position: relative;
+	
+
+}
+.container1 .box .imgBox img
+{
+    width:130%;
+    transition: 0.5s;
+	
+
+}
+.container1 .box:hover .imgBox img
+{
+    opacity: .2;
+    transform: scale(1.2);
+	
+
+}
+.container1 .box .content
+{
+   position: absolute; 
+   width:100% ;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 2;
+   padding: 20px;
+   box-sizing: border-box;
+   text-align: center;
+}
+.container1 .box .content h2
+{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-50px);
+    opacity:0;
+    visibility: hidden;
+}
+.container1 .box .content p
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(50px);
+    opacity:0;
+    visibility: hidden;
+}
+.container1 .box:hover .content h2,
+.container1 .box:hover .content p
+{
+    opacity: 1;
+visibility: visible;
+transform: translateY(0px);
+transition-delay: 0.2s;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+	
+    /* Position the tooltip */
+    position: fixed;
+right:0;
+bottom: 207px;
+    
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip img{
+    position: fixed;
+    height=100px; 
+    width:150px;
+       bottom: 20px;
+        right: 0;
+        opacity: 0.5;
+    transition: all .2s ease-in-out; 
+        }
+
+        .container2 {
+            position:relative;
+            width: 1000px;
+            height:100%;
+            margin:10px auto 0;
+            background: url(images/bats.jpg);
+            border-style: groove;
+            border-radius: 15px;
+            border-color: aqua;
+            
+
+            }
+        .container2 h1{
+            text-align: center;
+            color: crimson;
+            padding-bottom: 2px;
+        }
+        .container2 p{
+            text-align: center;
+            color:aqua;
+          
+        }
+.imga:hover{
+		right: 30px;
+		bottom: 30pxs;
+		opacity: 1.0;
+		transform: scale(1.5);
+         }
+#Navigator a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -250px; /* Position them outside of the screen */
+    transition: 0.5s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 320px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 30px; /* Increase font size */
+    color:  #04acb4; 
+	opactiy: 0.5;  
+border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+#Navigator a:hover {
+    left: 0;
+opactiy: 1.0;
+	color:#04acb4; /* On mouse-over, make the elements appear as they should */
+}
+#register {
+    top: 20px;
+    opacity: 0.8;
+background-color:  #3b3c44;
+color:  #04acb4;
+}
+
